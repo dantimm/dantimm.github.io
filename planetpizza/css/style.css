@@ -1,8 +1,8 @@
 /*fonts*/
 @font-face {
     font-family: 'proxima_nova_rgregular';
-    src: url('proxima_nova_regular-webfont.woff2') format('woff2'),
-    url('proxima_nova_regular-webfont.woff') format('woff');
+    src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+    url('../fonts/proxima_nova_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -13,8 +13,8 @@
 
 @font-face {
     font-family: 'arciform_sansregular';
-    src: url('arciform-webfont.woff2') format('woff2'),
-    url('arciform-webfont.woff') format('woff');
+    src: url('../fonts/arciform-webfont.woff2') format('woff2'),
+    url('../fonts/arciform-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -69,8 +69,6 @@
     margin-top: 30px;
     color: white;
     font-family: 'arciform_sansregular',sans-serif;
-    src: url('arciform-webfont.woff2') format('woff2'),
-    url('arciform-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 1.5rem;
@@ -79,8 +77,6 @@
 #arc-ex {
     color: white;
     font-family: 'arciform_sansregular',sans-serif;
-    src: url('arciform-webfont.woff2') format('woff2'),
-    url('arciform-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 4rem;
