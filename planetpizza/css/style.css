@@ -133,3 +133,106 @@ p {
     font-weight: 400;
     font-style: normal;
 }
+/*Color Style*/
+.parent {
+    display: grid;
+    grid-template-columns: 120px 120px 120px ;
+    grid-template-rows: 120px 120px ;
+}
+.child {
+}
+.p-color {
+    margin-left: -10px!important;
+}
+
+/*Form Styles*/
+.form-control {
+    max-width: 100%;
+}
+.field-style-before {
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    margin-bottom: 30px;
+    color: white;
+}
+.field-style-before::placeholder {
+    opacity: .7;
+}
+.field-style-before:focus {
+    background-color: transparent;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none!important;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    color: white;
+
+}
+.field-style-active {
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    margin-bottom: 30px;
+    color: #edba33;
+}
+.field-style-active::placeholder {
+    color: #edba33;
+    opacity: .7;
+}
+.field-style-active:focus {
+    background-color: transparent;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none!important;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    color: #edba33;
+}
+.field-style-after {
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #edba33;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    color: #edba33;
+}
+.field-style-after::placeholder{
+    color: #edba33;
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+@media (max-width: 768px) {
+    .form-control {
+        max-width: 50%;!important;
+    }
+}
