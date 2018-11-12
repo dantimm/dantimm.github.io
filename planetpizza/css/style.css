@@ -235,4 +235,68 @@ label:focus,
     .form-control {
         max-width: 50%;!important;
     }
+    #right-mobile {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 655px) {
+    .form-control {
+        max-width: 75%;!important;
+    }
+}
+@media (max-width: 576px) {
+    .form-control {
+        max-width: 100%;!important;
+    }
+}
+
+/*button css*/
+.btn {
+    margin: 15px;
+    padding: 10px 40px;
+    border-radius: 3rem;
+
+}
+.btn-primary
+{
+    background-color: #cc2027;
+    border: none;
+    font-weight: 400;
+}
+.btn-primary:hover {
+    background-color: white;
+    color: #cc2027;
+}
+.btn-secondary
+{
+    background-color: #edba33;
+    border: none;
+    color: #3b3c3e;
+    font-weight: 400;
+}
+.btn-secondary:hover {
+    background-color: #3b3c3e;
+    color: #edba33;
+}
+.btn-success
+{
+    background-color: #f1f2f2;
+    border: none;
+    color: #3b3c3e;
+    font-weight: 400;
+}
+.btn-success:hover {
+    background-color: #3b3c3e;
+    color: #f1f2f2;
+}
+.btn-dark
+{
+    background-color: #3b3c3e;
+    color: #f1f2f2;
+    font-weight: 400;
+
+}
+.btn-dark:hover {
+    background-color: #f1f2f2;
+    color: #3b3c3e;
 }
