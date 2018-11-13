@@ -306,3 +306,10 @@ label:focus,
 .form-check {
     border-radius: 3rem!important;
 }
+#head-title {
+    font-family: komu-b,sans-serif;
+    font-style:normal;
+    font-weight:400;
+    font-size: 4em;
+    letter-spacing: 2px;
+}
