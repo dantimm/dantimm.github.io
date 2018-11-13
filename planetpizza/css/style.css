@@ -249,46 +249,60 @@ label:focus,
     border-radius: 3rem;
 
 }
-.btn-primary
+.btn-1
 {
     background-color: #cc2027;
     border: none;
     font-weight: 400;
 }
-.btn-primary:hover {
+.btn-1:hover {
     background-color: white;
     color: #cc2027;
 }
-.btn-secondary
+.btn-2
 {
     background-color: #edba33;
     border: none;
     color: #3b3c3e;
     font-weight: 400;
 }
-.btn-secondary:hover {
+.btn-2:hover {
     background-color: #3b3c3e;
     color: #edba33;
 }
-.btn-success
+.btn-3
 {
     background-color: #f1f2f2;
     border: none;
     color: #3b3c3e;
     font-weight: 400;
 }
-.btn-success:hover {
+.btn-3:hover {
     background-color: #3b3c3e;
     color: #f1f2f2;
 }
-.btn-dark
+.btn-4
 {
     background-color: #3b3c3e;
     color: #f1f2f2;
     font-weight: 400;
 
 }
-.btn-dark:hover {
+.btn-4:hover {
     background-color: #f1f2f2;
     color: #3b3c3e;
+}
+
+/*menu styles*/
+.menu-text {
+    font-family: proxima-nova,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.form-check {
+    border-radius: 3rem!important;
 }
