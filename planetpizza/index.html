@@ -10,13 +10,27 @@
     <link rel="stylesheet" href="https://use.typekit.net/qmt4ddd.css">
     <link rel="stylesheet" href="css/home-style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $(".navbar").addClass("solid");
+                } else {
+                    $(".navbar").removeClass("solid");
+                }
+            });
+        });
+    </script>
 
-    
+
+
     <title>Hello, world!</title>
 </head>
 <body>
 <div class="container-fluid" style="padding: 0">
-    <nav class="navbar solid navbar-expand navbar-dark ">
+    <nav class="navbar navbar-expand navbar-dark ">
         <a class="navbar-brand" href="index.html"><img src="img/SVG/nav-logo.svg" alt="" id="logo"></a>
         <div class="collapse navbar-collapse" id="navbarsExample02">
             <ul class="navbar-nav mx-auto" id="bye-nav">
@@ -64,37 +78,57 @@
                 </div>
             </div>
         </div>
-
         <span id="burger" onclick="openNav()">&#9776;</span>
     </nav>
 </div>
-<div class="jumbotron" style="margin-bottom: 500px">
+<div class="jumbotron">
     <div class="container-fluid" style="padding: 0;">
         <img src="img/pp-jumbopic.jpg" alt="" style="max-width: 100%">
     </div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6" style="background-color: #cc1522">
+            <h1 id="menuh1">OUR<br>MENU</h1>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6 menu-pic" style="padding: 0;">
+                    <img src="img/pizza.jpg" alt="" class="img-fluid">
+                    <div class="menu-overlay"></div>
+                </div>
+                <div class="col-lg-6 menu-pic" style="padding: 0;">
+                    <img src="img/wings.jpg" alt="" class="img-fluid">
+                    <div class="menu-overlay"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 menu-pic" style="padding: 0;">
+                    <img src="img/pasta.jpg" alt="" class="img-fluid">
+                    <div class="menu-overlay"></div>
+                </div>
+                <div class="col-lg-6 menu-pic" style="padding:0;">
+                    <img src="img/cookie.jpg" alt="" class="img-fluid">
+                    <div class="menu-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
+<script>
 
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        }
+    /* Open */
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
 
-        $(document).ready(function() {
-            // Transition effect for navbar
-            $(window).scroll(function() {
-                // checks if window is scrolled more than 500px, adds/removes solid class
-                if($(this).scrollTop() > 200) {
-                    $('.navbar').addClass('solid');
-                } else {
-                    $('.navbar').removeClass('solid');
-                }
-            });
-        });
-    </script>
+    /* Close */
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+
+</script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
