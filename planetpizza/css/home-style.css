@@ -245,9 +245,9 @@ h1 {
     font-size: 3rem;
 }
 #menuh1 {
-    font-size: 8em;
-    padding-top: 30px;
-    padding-left: 60px;
+    font-size: 12em;
+    text-align: center;
+    margin: 15px 30px;
 }
 h2 {
     color: #181b1d;
