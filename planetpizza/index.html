@@ -31,37 +31,12 @@
 <body>
 <div class="container-fluid" style="padding: 0">
     <nav class="navbar navbar-expand navbar-dark ">
-        <a class="navbar-brand" href="index.html"><img src="img/SVG/nav-logo.svg" alt="" id="logo"></a>
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-            <ul class="navbar-nav mx-auto" id="bye-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">MENU <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ORDER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">LOCATIONS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                </li>
-            </ul>
-            <div class="col-xs-6 bye-logcart">
-                <button type="button" class="btn btn-2 p-nova-des" id="login-butt">Login</button>
-            </div>
-            <div class="bye-logcart">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-        </div>
+        <a class="navbar-brand" href="index.html"><img src="img/svg/nav-logo.svg" alt="" id="logo"></a>
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" ><p id="closebtn">&times;</p></a>
-            <div class="overlay-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" ><p id="closebtn" style="font-size: 50px">&times;</p></a>
+            <div class="overlay-content"style="overflow: auto">
                 <a href=""><img src="img/overlay-logo.png" alt="" id="overlay-logo"></a>
-                <div class="container" style="margin-bottom: 40px">
+                <div class="container" onclick="location.href='http://google.com';" style="margin-bottom: 40px">
                     <button type="button" class="btn btn-2 p-nova-des align-middle" id="login-butt-overlay">Login</button>
                     <i class="fas fa-shopping-cart align-middle" style="color: #3b3c3e"></i>
                 </div>
@@ -78,40 +53,157 @@
                 </div>
             </div>
         </div>
-        <span id="burger" onclick="openNav()"><img src="img/SVG/hamburger.svg" alt=""></span>
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <div class="row float-right" style="margin-left: auto;margin-right: 30px;align-items: center">
+                <div class="col-xs-6 bye-logcart">
+                    <button type="button" onclick="location.href='http://google.com';" class="btn btn-2 p-nova-des"
+                            id="login-butt">Login
+                    </button>
+                </div>
+                <div class="bye-logcart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+        <span id="burger" onclick="openNav()"><img src="img/svg/hamburger.svg" alt=""></span>
     </nav>
 </div>
 <div class="jumbotron">
     <div class="container-fluid" style="padding: 0;">
         <img src="img/pp-jumbopic.jpg" alt="" style="max-width: 100%">
+        <div class="text-center">
+            <h1 class="centered" style="background-color:rgba(24,27,29,.8);color: #edba33">Blast off to Flavor Town with Us.</h1>
+            <button type="button" class="btn btn-2 p-nova-des align-middle" id="jumbo-butt">Order Now</button>
+        </div>
+
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" style="background-color:rgba(24,27,29,.97);">
     <div class="row">
-        <div class="col-xl-6" style="background-color: #cc2027">
-            <h1 id="menuh1">OUR MENU</h1>
+        <div class="col">
+            <h1 id="menuh1">MENU</h1>
         </div>
-        <div class="col-xl-6">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 menu-pic" style="padding: 0;">
-                    <img src="img/pizza.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
-                    <div class="menu-overlay"></div>
+                    <div class="hovereffect">
+                        <img src="img/pizza.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
+                        <div class="overlay-menu">
+                            <div class="ol-content-menu">
+                                <h1 class="menu-title">Pizza</h1>
+                                <a href="">
+                                    <button type="button" class="btn btn-2 p-nova-des align-middle">ORDER</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 menu-pic" style="padding: 0;">
-                    <img src="img/wings.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
-                    <div class="menu-overlay"></div>
+                    <div class="hovereffect">
+                        <img src="img/wings.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
+                        <div class="overlay-menu">
+                            <div class="ol-content-menu">
+                                <h1 class="menu-title">Wings</h1>
+                                <a href="">
+                                    <button type="button" class="btn btn-2 p-nova-des align-middle">ORDER</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 menu-pic" style="padding: 0;">
-                    <img src="img/pasta.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
-                    <div class="menu-overlay"></div>
+                    <div class="hovereffect">
+                        <img src="img/pasta.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
+                        <div class="overlay-menu">
+                            <div class="ol-content-menu">
+                                <h1 class="menu-title">Pastas</h1>
+                                <a href="">
+                                    <button type="button" class="btn btn-2 p-nova-des align-middle">ORDER</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 menu-pic" style="padding:0;">
-                    <img src="img/cookie.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
-                    <div class="menu-overlay"></div>
+                    <div class="hovereffect">
+                        <img src="img/cookie.jpg" alt="" class="img-fluid" style="width: 100%;!important;">
+                        <div class="overlay-menu">
+                            <div class="ol-content-menu">
+                                <h1 class="menu-title">Desserts</h1>
+                                <a href="">
+                                    <button type="button" class="btn btn-2 p-nova-des align-middle">ORDER</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="container" style="margin: 80px auto">
+            <div class="row">
+                <div class="col-lg-6" style="margin: 30px 30px;">
+                        <h1 class="l-heading">Coordinates</h1>
+                    <div>
+                        <img src="img/svg/location.svg" alt="" id="loc-icon" class="align-middle" style="width: 50px;height:50px;">
+                        <h3 id="address" class="align-middle">420 N WASHINGTON AVE<br>MINNEAPOLIS MN 55401</h3>
+                    </div>
+                    <div>
+                        <img id="call-icon" src="img/svg/call-icon.svg" alt="" style="width: 40px;height:40px;" class="align-middle">
+                        <h3 id="phone" class="align-middle">123-456-7890</h3>
+                        <div class="text-center" id="d-button">
+                            <button type="button" onclick="location.href='http://google.com';" class="btn btn-2 p-nova-des" id="direction-butt">
+                                Get Directions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto" style="margin: 30px 30px;">
+                    <h1 class="l-heading">Hours</h1>
+                    <ul class="hour-list">
+                        <li><h4 class="hour-list-items f-h-l">Sunday:</h4><h4 class="hour-list-items float-right">Noon-10PM</h4></li>
+                        <li><h4 class="hour-list-items f-h-l">Monday:</h4><h4 class="hour-list-items float-right">11AM-Midnight</h4></li>
+                        <li><h4 class="hour-list-items f-h-l">Tuesday:</h4><h4 class="hour-list-items float-right">11AM-Midnight</h4></li>
+                        <li><h4 class="hour-list-items f-h-l">Wednesday:</h4><h4 class="hour-list-items float-right">11AM-Midnight</h4></li>
+                        <li><h4 class="hour-list-items f-h-l">Thursday:</h4><h4 class="hour-list-items float-right">11AM-Midnight</h4></li>
+                        <li><h4 class="hour-list-items f-h-l">Friday:</h4><h4 class="hour-list-items float-right">11AM-2AM</h4></li>
+                        <li><h4 class="hour-list-items f-h-l">Saturday:</h4><h4 class="hour-list-items float-right">Noon-2AM</h4><</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-bottom: 80px;">
+            <div class="row">
+                <div class="mapouter img-fluid">
+                    <div class="gmap_canvas" style="width: 100%">
+                        <iframe width="100%" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=420%20N%20Washington%20Ave%20Minneapolis%2C%20MN%2055401&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                        <a href="https://www.pureblack.de">pureblack.de</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" container text-center" style="z-index: 1">
+            <img src="img/svg/pizza-truck.svg" alt="" style="width: 200px;margin-bottom: 30px;">
+        </div>
+        <div class="container-fluid">
+            <img src="img/svg/rocket-bg.svg" alt="" id="ft-bg">
+
+        </div>
+        <div class="container" style="height: 1200px;margin-top: -40px">
+            <div class="row">
+                <div class="col">
+                   <h1 style="color: #edba33">Come find our Pizza Ship!</h1>
+                    <p style="color: #f1f2f2">If you're not in the mood to come all the way to our store, or as we like to call it The Mothership, you can always use our Pizza Ship (truck) finder tool. It may be just right around the corner from you.</p>
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
