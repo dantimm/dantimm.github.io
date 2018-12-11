@@ -58,12 +58,11 @@
     content: "";
     position: absolute;
     bottom: -10px;
-    width: 0px;
+    width: 0;
     height: 5px;
     margin: 5px 0 0;
     transition: all 0.2s ease-in-out;
     transition-duration: 0.75s;
-    opacity: 0;
 }
 
 .overlay .closebtn {
@@ -87,6 +86,16 @@
     z-index: 2;
     width: 100%;
     margin-top: 30px;
+}
+.nav-menu-cus {
+    padding: 15px;
+    background-color: rgba(24,27,29,.4);
+    transition: background-color .3s ease-in;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    margin-top: 30px;
+
 }
 .solid {
     background-color: rgba(24,27,29,1);
@@ -404,6 +413,22 @@ p {
     font-size: .9rem;
     width: 100%;
 }
+#blast-butt {
+    background-color: transparent;
+    border: 2px solid #edba33;
+    font-weight: bold;
+    color: #edba33;
+    margin: 45px auto;
+    padding: 10px auto;
+    font-size: 1.3rem;
+    width: 100%;
+
+}
+#blast-butt:hover {
+    background-color: #edba33;
+    color: rgba(24,27,29,1)
+}
+
 .mapouter{
     text-align:right;
     height:550px;
@@ -427,6 +452,25 @@ p {
     margin: -700px auto -1000px;
 
 }
+.food-item-bl {
+    margin: 15px auto;
+    padding: 0 20px;
+}
+.food-item {
+    color: #edba33;
+}
+.food-desc {
+    color: #f1f2f2;
+}
+.f-link {
+    font-family: 'arciform_sansregular',sans-serif;
+    font-size: 1.3rem;
+    color: #3b3c3e;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
 @media screen and (max-height: 650px) {
     .overlay {overflow-y: auto;}
     .overlay a {font-size: 20px}
