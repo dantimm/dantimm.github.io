@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/qmt4ddd.css">
+    <link rel="stylesheet" href="css/home-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+    <title>Order - Planet Pizza</title>
+</head>
+<body style="background-color: #1f2224">
+<div class="container-fluid" style="padding: 0">
+    <nav class="navbar solid navbar-expand navbar-dark " style="margin: 0">
+        <a class="navbar-brand" href="index.html"><img src="img/SVG/nav-logo.svg" alt="" id="logo"></a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" ><p id="closebtn" style="font-size: 50px">&times;</p></a>
+            <div class="overlay-content" style="overflow: auto">
+                <a href=""><img src="img/overlay-logo.png" alt="" id="overlay-logo"></a>
+                <div class="container" onclick="location.href='http://google.com';" style="margin-bottom: 40px">
+                    <button type="button" class="btn btn-2 p-nova-des align-middle" id="login-butt-overlay">Login</button>
+                    <i class="fas fa-shopping-cart align-middle" style="color: #3b3c3e"></i>
+                </div>
+                <div class="container o-line"></div>
+                <a href="menu.html" class="ul-hover">MENU</a>
+                <a href="order.html" class="ul-hover">ORDER</a>
+                <a href="#" class="ul-hover">LOCATIONS</a>
+                <a href="#" class="ul-hover">ABOUT</a>
+                <a href="#" class="ul-hover">CONTACT</a>
+                <div class="container o-line" style="margin-top: 20px"></div>
+                <div class="container">
+                    <i class="fab fa-instagram social-icons"></i>
+                    <i class="fab fa-facebook-f social-icons"></i>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <div class="row float-right" style="margin-left: auto;margin-right: 30px;align-items: center">
+                <div class="col-xs-6 bye-logcart">
+                    <button type="button" onclick="location.href='http://google.com';" class="btn btn-2 p-nova-des"
+                            id="login-butt">Login
+                    </button>
+                </div>
+                <div class="bye-logcart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+        <span id="burger" onclick="openNav()"><img src="img/SVG/hamburger.svg" alt=""></span>
+    </nav>
+</div>
+<div class="jumbotron" style="margin: 0;height: 100%">
+    <div class="container-fluid" style="padding: 0;">
+        <img src="img/p1.jpg" alt="" style="max-width: 100%">
+    </div>
+    <div class="text-center">
+        <h1 class="centered" style="background-color:rgba(24,27,29,.8);color: #edba33;font-size: 4rem">MENU</h1>
+    </div>
+</div>
+<div class="container" style="margin-bottom: 80px">
+    <div class="row" style="margin: 45px 0 0 -15px">
+        <h1 class="l-heading">Wings</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                    <label class="form-check-label" for="defaultCheck18"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Buffalo</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $7</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect18" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect18" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                 style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Marinated and oven-baked and then smothered in house-made buffalo sauce.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                    <label class="form-check-label" for="defaultCheck17"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Roasted Miso</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $8</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect17" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect17" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Honey and brown sugar balance out the saltiness of the soy sauce and miso.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                    <label class="form-check-label" for="defaultCheck16"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Szechuan</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $8</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect16" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect16" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Spicy Szechuan peppercorns and red chiles mingle with traditional Asian flavors.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                    <label class="form-check-label" for="defaultCheck15"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Honey BBQ</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $7</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect15" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect15" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Our take on a classic sauce, with flavors out of this world. Try it with a side of ranch.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                    <label class="form-check-label" for="defaultCheck14"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Sweet Thai Chili</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $8</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect14" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect14" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">A house favorite. A little sweet, a little spicy, and a whole lot of flavor.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                    <label class="form-check-label" for="defaultCheck13"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Garlic Parm</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $7</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect13" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect13" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">A balanced blend of herbs, spices, and packed with garlic and parmesan.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin: 30px 0 0 -15px">
+        <h1 class="l-heading">Pizza</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                    <label class="form-check-label" for="defaultCheck12"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Sweet Italian</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $16</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect12" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect12" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Red sauce, fennel sausage, mozzarella, provolone, red onion & peppadew peppers.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                    <label class="form-check-label" for="defaultCheck11"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Margherita</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $13</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect11" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect11" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Italian red sauce, fior de latte, olive oil & fresh basil.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                    <label class="form-check-label" for="defaultCheck10"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Iowan</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $17</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect10" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect10" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">La Quercia prosciutto, ricotta, mozzarella, garlic & arugula.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                    <label class="form-check-label" for="defaultCheck9"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Korean BBQ</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $18</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect9" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect9" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Beef short ribs, mozzarella, scallions, arugula, sesame & soy chili vinaigrette.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                    <label class="form-check-label" for="defaultCheck8"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Forager</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $16</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect8" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect8" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Crimini, shiitake, and portabella mushrooms, taleggio, fontina & tarragon.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                    <label class="form-check-label" for="defaultCheck7"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Old Reliable</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $11</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect7" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect7" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Red sauce, mozzarella & pecorino.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                    <label class="form-check-label" for="defaultCheck6"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Marinara</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $9</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect6" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect6" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Italian red sauce, garlic, olive oil & Sicilian oregano.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                    <label class="form-check-label" for="defaultCheck5"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Xerxes</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $16</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect5" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect5" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Sautéed spinach, sheep's milk feta, mozzarella, kalamata olives & almonds.</p>
+            </div>
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                    <label class="form-check-label" for="defaultCheck4"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">La Creme</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $12</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect4" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect4" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Italian red sauce, shaved parmigiano reggiano, cream, olive oil & basil.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin: 30px 0 0 -15px">
+        <h1 class="l-heading">Desserts</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Cookie</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $2</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect3" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect3" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Each week it changes. Ask us what's fresh for you!</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Brownie</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $4</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect2" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect2" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">Chewy, fudgy and lots of chocolate. Oh yeah, and it has a peanut butter swirl.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="food-item-bl">
+                <div class="form-check" style="display: inline-block;margin-left: -25px">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1"></label>
+                </div>
+                <h2 class="food-item" style="display: inline-block">Cheesecake</h2>
+                <h3 class="food-item" style="display: inline-block;margin-left: 10px"> $8</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group" style="width: 60px">
+                            <label for="exampleFormControlSelect1" style="display: none;">Qty</label>
+                            <select class="form-control" id="exampleFormControlSelect1" style="display: inline-block">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="" class=" btn btn-2 login-butt"
+                                style="margin-left: -4rem">Add to Order
+                        </button>
+                    </div>
+                </div>
+                <p class="food-desc">We know.. A pizza place that sells cheesecake too? We're out of this world.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="padding: 0!important;margin-top: 120px">
+    <div class="container-fluid" style="background-color:#edba33;padding: 30px">
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top: 15px">
+                <div class="col-md-2 text-center">
+                    <a href="menu.html" class="ul-hover f-link">MENU</a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="order.html" class="ul-hover f-link">ORDER</a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#" class="ul-hover f-link">LOCATIONS</a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#" class="ul-hover f-link">ABOUT</a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#" class="ul-hover f-link">CONTACT</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container" style="padding: 0 15%">
+            <hr style="border-top: #3b3c3e 3px solid;margin-top: 60px">
+
+        </div>
+        <div>
+            <div class="text-center" style="margin-top: 60px;margin-bottom: 30px">
+                <a href="index.html"><img src="img/overlay-logo.png" alt="" style="width: 150px"></a>
+            </div>
+            <div class="container text-center">
+                <i class="fab fa-instagram social-icons"></i>
+                <i class="fab fa-facebook-f social-icons"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #d6a927">
+        <div class="container" style="padding-top: 30px;padding-bottom: 10px">
+            <p class="text-center">Property of primodesign.co 2018&copy</p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    /* Open */
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+
+</script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
