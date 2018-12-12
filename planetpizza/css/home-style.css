@@ -106,6 +106,29 @@ li {
 .solid {
     background-color: rgba(30,31,34,1);
 }
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #000000;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+.modal-header {
+    border-bottom: #edba33 1px solid;
+    margin-bottom: 30px;
+    color: white;
+}
+.modal-footer {
+    border-top: #edba33 1px solid;
+
+}
 .nav-item {
     padding: 0 15px;
     font-size: 1.25rem;

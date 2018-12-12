@@ -26,7 +26,7 @@
             <div class="overlay-content" style="overflow: auto">
                 <a href=""><img src="img/overlay-logo.png" alt="" id="overlay-logo"></a>
                 <div class="container" onclick="location.href='http://google.com';" style="margin-bottom: 40px">
-                    <button type="button" class="btn btn-2 p-nova-des align-middle" id="login-butt-overlay">Login</button>
+                    <button type="button" class="btn btn-2 p-nova-des align-middle" id="login-butt-overlay" data-toggle="modal" data-target="#exampleModal">Login</button>
                     <i class="fas fa-shopping-cart align-middle" style="color: #3b3c3e"></i>
                 </div>
                 <div class="container o-line"></div>
@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarsExample02">
             <div class="row float-right" style="margin-left: auto;margin-right: 30px;align-items: center">
                 <div class="col-xs-6 bye-logcart">
-                    <button type="button" onclick="location.href='http://google.com';" class="btn btn-2 p-nova-des"
+                    <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-2 p-nova-des"
                             id="login-butt">Login
                     </button>
                 </div>
@@ -62,7 +62,7 @@
         <img src="img/p1.jpg" alt="" style="max-width: 100%">
     </div>
     <div class="text-center">
-        <h1 class="centered" style="background-color:rgba(24,27,29,.8);color: #edba33;font-size: 4rem">MENU</h1>
+        <h1 class="centered" style="background-color:rgba(24,27,29,.8);color: #edba33;font-size: 4rem">Order for Carryout!</h1>
     </div>
 </div>
 <div class="container" style="margin-bottom: 80px">
@@ -662,6 +662,48 @@
     <div class="container-fluid" style="background-color: #d6a927">
         <div class="container" style="padding-top: 30px;padding-bottom: 10px">
             <p class="text-center">Property of primodesign.co 2018&copy</p>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: #edba33">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 30px;padding: 0 30px 0 15px">
+                        <input class="form-control field-style-active" type="text" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 30px;padding: 0 30px 0 15px">
+                        <input class="form-control field-style-active" type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 30px;padding: 0 30px 0 15px">
+                        <input class="form-control field-style-active" type="text" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 30px;padding: 0 30px 0 15px">
+                        <input class="form-control field-style-active" type="text" placeholder="Password">
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-3 btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn-2 btn btn-primary">Save changes</button>
+            </div>
         </div>
     </div>
 </div>
