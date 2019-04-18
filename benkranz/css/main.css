@@ -6,7 +6,6 @@ main {
     padding: 0 !important;
     position: relative;
     margin-bottom: 0;
-    z-index: -1;
 }
 
 .active {
@@ -15,8 +14,9 @@ main {
 
 .nav {
     background-color: #fafaf8;
-    height: 66px;
+    min-height: 66px;
 }
+
 
 #hero-content {
     z-index: 10;
@@ -53,6 +53,7 @@ main {
 }
 
 .con-card {
+    position: relative;
     background-color: #f3f2ed;
     border-radius: 2rem;
     margin-top: -4.5rem;
@@ -81,23 +82,80 @@ main {
     margin-top: 5rem;
 }
 
-#about-bg {
-    position: absolute;
-    background-color: #f3f2ed;
-    border-radius: 2rem;
-    z-index: -10;
 
-
-}
 
 .section-info {
     width: 100%;
     margin-bottom: 8.5rem;
 }
 
+.name-cap {
+    font-size: 1rem;
+    margin: 1rem 0 3rem;
+}
+
+.fab {
+    color: #a31f1f;
+    font-size: 1.5rem;
+    margin: 10px;
+    transition: .5s;
+}
+
+.fab:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+
+#portrait {
+    border-radius: 2rem;
+}
+
 #about-card {
     background-color: #3d5f6a;
 }
+
+#about-text {
+    background-color: #f3f2ed;
+    z-index: 10;
+    margin-left: -10rem;
+    border-radius: 2rem;
+    padding: 30px;
+    height: 100%;
+}
+
+#about-col {
+    padding: 4rem 4rem 4rem 0;
+}
+
+#contact {
+    margin-top: 5rem;
+    background-image: url(../images/contact-bg.jpg)
+}
+
+
+#contact-header {
+    color: white;
+    margin-top: 3rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    border: none;
+    border-bottom: 1px solid #fafaf8 !important;
+    border-radius: 0;
+}
+
+textarea.form-control {
+    height: 2.5rem;
+    overflow: auto;
+}
+
+
 
 @media (min-width:1200px) {
     #dt-hero {
@@ -142,6 +200,20 @@ main {
     .display-4 {
         font-size: 2.5rem;
     }
+
+    #about-text {
+        z-index: 10;
+        margin-left: -10rem;
+        border-radius: 2rem;
+        padding: 30px;
+        height: 100%;
+    }
+
+    #about-col {
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+
+
 }
 
 @media (max-width: 992px) {
@@ -161,6 +233,29 @@ main {
         max-width: 952px;
     }
 
+    #about-text {
+        z-index: 10;
+        margin-left: 0;
+        margin-top: -3rem;
+        border-radius: 2rem;
+        padding: 30px;
+        height: 112%;
+    }
+
+    #about-col {
+        padding: 0;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        margin-bottom: 3rem;
+    }
+
+
+
 
 
 
@@ -173,6 +268,11 @@ main {
 
     .section-info {
         max-width: 728px;
+    }
+
+    #about-text {
+        height: 110%;
+        ;
     }
 
 
@@ -201,6 +301,19 @@ main {
 
     .section-info {
         max-width: 536px;
+    }
+
+    #about-text {
+        height: 109%;
+    }
+
+    #about-card {
+        margin: 0;
+        padding: 0;
+    }
+
+    #about-text {
+        height: 112%;
     }
 }
 
