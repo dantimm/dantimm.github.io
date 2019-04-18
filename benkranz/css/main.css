@@ -150,6 +150,10 @@ main {
     border-radius: 0;
 }
 
+.form-control:focus {
+    color: #fafaf8 !important;
+}
+
 textarea.form-control {
     height: 2.5rem;
     overflow: auto;
